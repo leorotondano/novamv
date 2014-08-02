@@ -1,17 +1,19 @@
 .mail_form_div
 {
-	border-collapse: separate; border-spacing: 10px; 
+	/* padding: 15px; */
+	
+    /*background: transparent url('../images/email.png') no-repeat right top;	*/
+	/* min-height: 300px; */
 }
 
 .mail_form_div input[type='text'], .mail_form_div textarea {
-    background: transparent; 
+	background: transparent;
     border: 1px solid #ffa853; 
     border-radius: 5px; 
     box-shadow: 0 0 3px 1px #dda853; 
     color: #666; 
     outline: none; 
     height:30px; 
-    width: 500px;
 	margin: 0 0 15px 0;
 	padding: 5px;
   } 
@@ -20,9 +22,13 @@
     box-shadow: 0 0 3px 2px #dda853; 
   } 
   
+.mail_form_div input[type='text'] {
+    width: 100%;		
+}  
+  
 .mail_form_div textarea { 
     height:90px; 
-    width: 500px;	
+	width: 100%;
 }
 
 .mail_form_div tr {
@@ -51,5 +57,5 @@
 	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: right;
+	text-align: left;
 }
