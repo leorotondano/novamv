@@ -59,50 +59,24 @@
 				
 					<div class="row">
 						<form action="contato.php" method="POST" name="mailForm">
-							<table class="mail_table">
-								<tr>
-									<td>
-										<label for="nome">Nome:</label>
-									</td>
-									<td>
-										<input type="text" class="nome" name="nome" id="nome" />
-									</td>
-									<td>
+							<div class="mail_form_div">
+
+										<input type="text" class="nome" name="nome" id="nome" placeholder="Nome" />
+
 										<span class="validator nome_validator"></span>
-									</td>
-								</tr>	
-								<tr>
-									<td>
-										<label for="email">Email:</label>
-									</td>
-									<td>
-										<input type="text" class="email" name="email" id="email" />
-									</td>	
-									<td>
+
+
+										<input type="text" class="email" name="email" id="email" placeholder="Seu email" />
+
 										<span class="validator email_validator"></span>
-									</td>			
-								</tr>
-								<tr>
-									<td class="valignTop">
-										<label for="mensagem">Mensagem:</label>
-									</td>
-									<td>
-										<textarea name="mensagem" class="mensagem" id="mensagem"></textarea>					
-									</td>
-									<td>
+
+										<textarea name="mensagem" class="mensagem" id="mensagem" placeholder="Texto"></textarea>
+
 										<span class="validator mensagem_validator"></span>
-									</td>			
-								</tr>
-								<tr>
-									<td>
-									</td>
-									<td class="alignRight buttonSubmit">
+
 										<input type="submit" name="submit" class="submit" value="Enviar" />
-									</td>									
-									<td>
-									</td>
-								</tr>
-							</table>						
+
+							</div>
 
 						</form>	
 					</div>
