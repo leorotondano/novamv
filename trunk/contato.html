@@ -55,25 +55,37 @@
 						</div>
 					</div>
 				</div>
-				<div class="contatos">
 				
-					<div class="row">
-						<form action="contato.php" method="POST" name="mailForm">
-							<div class="mail_form_div">
-								
-								<input type="text" class="nome" name="nome" id="nome" placeholder="Nome" />
-								<span class="validator nome_validator"></span>
-								<input type="text" class="email" name="email" id="email" placeholder="Seu email" />
-								<span class="validator email_validator"></span>
-								<textarea name="mensagem" class="mensagem" id="mensagem" placeholder="Texto"></textarea>
-								<span class="validator mensagem_validator"></span>
-								<input type="submit" name="submit" class="submit" value="Enviar" />
 
-							</div>
 
-						</form>	
-					</div>
-				</div>
+
+		</div>
+		
+		<div class="row">
+			<div id="form-main" class="4u">
+			  <div id="form-div">
+				<form class="form" action="contato.php" method="POST" name="mailForm" id="form1">    
+				  <p class="name">
+					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome" id="name" name="nome" />
+				  </p>
+				  
+				  <p class="email">
+					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" name="email" />
+				  </p>
+				  
+				  <p class="text">
+					<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Texto" name="mensagem"></textarea>
+				  </p>
+				  
+				  
+				  <div class="submit">
+					<input type="submit" value="ENVIAR" id="button-blue" name="submit"/>
+					<div class="ease"></div>
+				  </div>
+				</form>
+			  </div>				
 			</div>
+
+		</div>		
 	</body>
 </html>
