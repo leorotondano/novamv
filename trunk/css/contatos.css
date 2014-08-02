@@ -1,9 +1,9 @@
-.mail_table
+.mail_form_div
 {
 	border-collapse: separate; border-spacing: 10px; 
 }
 
-.mail_table input[type='text'], .mail_table textarea {
+.mail_form_div input[type='text'], .mail_form_div textarea {
     background: transparent; 
     border: 1px solid #ffa853; 
     border-radius: 5px; 
@@ -12,32 +12,34 @@
     outline: none; 
     height:30px; 
     width: 500px;
+	margin: 0 0 15px 0;
+	padding: 5px;
   } 
   
-.mail_table input[type='text']:focus, .mail_table textarea:focus {
+.mail_form_div input[type='text']:focus, .mail_form_div textarea:focus {
     box-shadow: 0 0 3px 2px #dda853; 
   } 
   
-.mail_table textarea { 
+.mail_form_div textarea { 
     height:90px; 
     width: 500px;	
 }
 
-.mail_table tr {
+.mail_form_div tr {
 	margin: 15px;
 }
 
-.mail_table .valignTop
+.mail_form_div .valignTop
 {
 	vertical-align: top;
 }
 
-.mail_table .alignRight
+.mail_form_div .alignRight
 {
 	text-align: right;
 }
 
-/* .mail_table .buttonSubmit
+/* .mail_form_div .buttonSubmit
 {
 	padding-right: 25px;
 } */
@@ -45,8 +47,9 @@
 
 .contatos
 {
-	width: 700px;
+	width: 500px;
 	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: right;
 }
