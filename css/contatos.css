@@ -1,0 +1,52 @@
+.mail_table
+{
+	border-collapse: separate; border-spacing: 10px; 
+}
+
+.mail_table input[type='text'], .mail_table textarea {
+    background: transparent; 
+    border: 1px solid #ffa853; 
+    border-radius: 5px; 
+    box-shadow: 0 0 3px 1px #dda853; 
+    color: #666; 
+    outline: none; 
+    height:30px; 
+    width: 500px;
+  } 
+  
+.mail_table input[type='text']:focus, .mail_table textarea:focus {
+    box-shadow: 0 0 3px 2px #dda853; 
+  } 
+  
+.mail_table textarea { 
+    height:90px; 
+    width: 500px;	
+}
+
+.mail_table tr {
+	margin: 15px;
+}
+
+.mail_table .valignTop
+{
+	vertical-align: top;
+}
+
+.mail_table .alignRight
+{
+	text-align: right;
+}
+
+/* .mail_table .buttonSubmit
+{
+	padding-right: 25px;
+} */
+
+
+.contatos
+{
+	width: 700px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
