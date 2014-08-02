@@ -11,11 +11,12 @@
 		<meta name="description" content="A MV Serviços é uma empresa em Salvador de serviços elétricos, prediais e automação." />
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" rel="stylesheet" />
+		<link rel="stylesheet" href="css/contatos.css" />		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>		
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -53,89 +54,59 @@
 
 						</div>
 					</div>
+				</div>
+				<div class="contatos">
+				
 					<div class="row">
-						<div class="12u">
+						<form action="contato.php" method="POST" name="mailForm">
+							<table class="mail_table">
+								<tr>
+									<td>
+										<label for="nome">Nome:</label>
+									</td>
+									<td>
+										<input type="text" class="nome" name="nome" id="nome" />
+									</td>
+									<td>
+										<span class="validator nome_validator"></span>
+									</td>
+								</tr>	
+								<tr>
+									<td>
+										<label for="email">Email:</label>
+									</td>
+									<td>
+										<input type="text" class="email" name="email" id="email" />
+									</td>	
+									<td>
+										<span class="validator email_validator"></span>
+									</td>			
+								</tr>
+								<tr>
+									<td class="valignTop">
+										<label for="mensagem">Mensagem:</label>
+									</td>
+									<td>
+										<textarea name="mensagem" class="mensagem" id="mensagem"></textarea>					
+									</td>
+									<td>
+										<span class="validator mensagem_validator"></span>
+									</td>			
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td class="alignRight buttonSubmit">
+										<input type="submit" name="submit" class="submit" value="Enviar" />
+									</td>									
+									<td>
+									</td>
+								</tr>
+							</table>						
 
-							<!-- Banner -->
-								<section id="banner">
-									<a href="http://facebook.com/DreametryDoodle">
-										<span class="image image-full"><img src="images/pic01.jpg" alt="" /></span>
-										<header>
-											<h2>MV. Qualidade em Serviços.</h2>
-											<span class="byline">A solução para as suas necessidades</span>
-										</header>
-									</a>
-								</section>
-
-						</div>
-					</div>
-					<div class="row">
-						<div class="12u">
-								
-							<!-- Intro -->
-								<section id="intro">
-								
-									<div>
-										<div class="row">
-											<div class="4u">
-												<section class="first">
-													<span class="pennant"><span class="fa fa-building"></span></span>
-													<header>
-														<h2>Manutenção Predial</h2>
-													</header>
-													<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-												</section>
-											</div>
-											<div class="4u">
-												<section class="middle">
-													<span class="pennant pennant-alt"><span class="fa fa-flash"></span></span>
-													<header>
-														<h2>Manutenção Elétrica</h2>
-													</header>
-													<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-												</section>
-											</div>
-											<div class="4u">
-												<section class="last">
-													<span class="pennant pennant-alt2"><span class="fa fa-wrench"></span></span>
-													<header>
-														<h2>Automação</h2>
-													</header>
-													<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-												</section>
-											</div>
-										</div>
-									</div>
-
-									<!--<div class="actions">
-										<a href="#" class="button big">Get Started</a>
-										<a href="#" class="button alt big">Learn More</a>
-									</div>-->
-								
-								</section>
-
-								<section id="footer" class="container">
-									<div class="row">
-										<div class="12u">
-										
-											<!-- Copyright -->
-												<div id="copyright">
-													<ul class="links">
-														<li>All rights reserved</li>
-														<li>&copy; MV Serviços 2014</li>
-													</ul>
-												</div>
-
-										</div>
-									</div>
-								</section>												
-								
-						</div>
+						</form>	
 					</div>
 				</div>
 			</div>
-		</div>
-
-
 	</body>
 </html>
