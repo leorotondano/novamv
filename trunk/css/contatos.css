@@ -236,13 +236,50 @@ input:focus, textarea:focus {
 	width: 100%;
 }
 
-.row-contato-interna
+@media screen and (min-width: 1281px) {
+	.row-contato-interna
+	{
+		background-color:rgba(72,72,72,0.4);
+	  -moz-border-radius: 7px;
+	  -webkit-border-radius: 7px;
+		width: 700px;
+		margin: 0px auto;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.row-contato-interna
+	{
+		background-color:rgba(72,72,72,0.4);
+	  -moz-border-radius: 7px;
+	  -webkit-border-radius: 7px;
+		width: 95%;
+		margin: 0px auto;
+		position: relative;
+	}
+	
+	.width100Mob
+	{
+		width: 100% !important;
+	}
+}
+
+.contatos-texto
 {
-	background-color:rgba(72,72,72,0.4);	
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-	width: 700px;
-	margin: 0px auto;
+	padding: 35px 0 0 20px;
+	text-align: justify;
+	font-weight: bold;
+}
+
+.biggerFont
+{
+	font-size: 17px;
+}
+
+.margin5
+{
+	margin: 0 5px 0 0;
 }
 
 .floatLeft
