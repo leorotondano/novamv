@@ -60,32 +60,44 @@
 
 
 		</div>
-		
 		<div class="row">
-			<div id="form-main" class="4u">
-			  <div id="form-div">
-				<form class="form" action="contato.php" method="POST" name="mailForm" id="form1">    
-				  <p class="name">
-					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome" id="name" name="nome" />
-				  </p>
-				  
-				  <p class="email">
-					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" name="email" />
-				  </p>
-				  
-				  <p class="text">
-					<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Texto" name="mensagem"></textarea>
-				  </p>
-				  
-				  
-				  <div class="submit">
-					<input type="submit" value="ENVIAR" id="button-blue" name="submit"/>
-					<div class="ease"></div>
-				  </div>
-				</form>
-			  </div>				
-			</div>
+			<div class="row-contato">
+				<div class="row-contato-interna">
 
-		</div>		
+					<div class="floatLeft 6u">
+						<section class="first">
+						Entre em contato conosco
+						</section>
+					</div>
+
+					<div id="form-div" class="floatLeft 6u">
+						<section class="last">
+							<form class="form" action="contato.php" method="POST" name="mailForm" id="form1">    
+							  <p class="name">
+								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome" id="name" name="nome" />
+							  </p>
+							  
+							  <p class="email">
+								<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" name="email" />
+							  </p>
+							  
+							  <p class="text">
+								<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Texto" name="mensagem"></textarea>
+							  </p>
+							  
+							  
+							  <div class="submit">
+								<input type="submit" value="ENVIAR" id="button-blue" name="submit"/>
+								<div class="ease"></div>
+							  </div>
+							</form>
+						</section>				
+					</div>
+					
+					<div class="clear"></div>
+
+				</div>
+			</div>		
+		</div>
 	</body>
 </html>

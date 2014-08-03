@@ -85,12 +85,13 @@
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:30px;
-	margin-left: -260px;
+/* 	width: 450px;
+	
+	margin-left: auto;
+	margin-right: auto; */
+	
+	/* margin-top:30px; */
+	
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
@@ -228,4 +229,27 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+}
+
+.row-contato
+{
+	background: #f7f7f7 url('images/bg02.png');
+	padding: 10px 0;
+	width: 100%;
+}
+
+.row-contato-interna
+{
+	width: 700px;
+	margin: 0px auto;
+}
+
+.floatLeft
+{
+	float: left;
+}
+
+.clear
+{
+	clear: both;
 }
