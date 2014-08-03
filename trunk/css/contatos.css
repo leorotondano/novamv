@@ -268,7 +268,7 @@ input:focus, textarea:focus {
 
 .contatos-texto
 {
-	padding: 35px 0 0 20px;
+	padding: 35px 10px 0 20px;
 	text-align: justify;
 	font-weight: bold;
 }
